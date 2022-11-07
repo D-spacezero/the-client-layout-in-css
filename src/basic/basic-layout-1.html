@@ -6,8 +6,36 @@
     <title>Basic Layout 1</title>
     <link rel="stylesheet" href="../style.css" />
     <style>
-      /* Doe hier jouw ding! */
+
+      body {
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 6fr;
+      grid-template-rows: 1fr 8fr 1fr;
+      grid-template-areas:
+      "header header" 
+      "navigatie main" 
+      "footer footer";
+      gap: 0.5em;
+      }
+
+      header {
+      grid-area: header;
+      }
+
+      nav {
+        grid-area: navigatie;
+      }
+
+      main {
+        grid-area: main;
+      }
+
+      footer {
+        grid-area: footer;
+      }
     </style>
+    
   </head>
   <body id="basic-layout-1">
     <header><h1>Basic Layout 1</h1></header>

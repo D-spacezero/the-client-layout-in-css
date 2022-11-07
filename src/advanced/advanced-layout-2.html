@@ -3,11 +3,81 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Advanced Layout 2</title>
+    <title>Advanced Layout 1</title>
     <link rel="stylesheet" href="../style.css" />
     <style>
-      /* Doe hier jouw ding! */
+      body {
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+          "."
+          "header"
+          "nav"
+          "main"
+          "footer";
+          gap: 0.5em;
+      }
+
+      header {
+        grid-area: header;
+        transform: rotate(25deg);
+      }
+
+      nav {
+        grid-area: header;
+        transform: rotate(-25deg);
+      }
+
+      main {
+        grid-area: main;
+      }
+
+      footer {
+        grid-area: footer;
+      }
     </style>
+    <!--<style>
+      body {
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 2fr 2fr 2fr 2fr;
+      grid-template-rows: 2fr 2fr 2fr 2fr;
+      grid-template-areas:
+      ". header header header"
+      "navigatie navigatie navigatie ."
+      ". main main main"
+      ". footer footer footer"
+      ;
+      gap: 0.5em;
+      }
+
+      header {
+      grid-area: header;
+      }
+
+      nav {
+        grid-area: navigatie;
+      }
+
+      main {
+        grid-area: main;
+      }
+
+      footer {
+        grid-area: footer;
+      }
+    </style>-->
+  </head>
+  <body id="advanced-layout-1">
+    <header><h1>Advanced Layout 1</h1></header>
+    <nav><a href="../index.html">Terug naar het overzicht</a></nav>
+    <main></main>
+    <footer></footer>
+  </body>
+</html>
+
   </head>
   <body id="advanced-layout-2">
     <header><h1>Advanced Layout 2</h1></header>
